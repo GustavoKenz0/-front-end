@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coração</title>
+    <title>Heart</title>
 
     <style>
+
         body{
             display: flex;
             justify-content: center;
@@ -27,36 +28,14 @@
             }
         }
 
-        .coracao{
-            position: relative;
-            width: 100px;
-            height: 90px;
-            background-color: red;
-            transform: rotate(-45deg);
+        .img{
             animation: heartbeat 1s infinite;
-        }
-
-        .coracao::before, .coracao::after{
-            content: '';
-            position: absolute;
-            width: 100px;
-            height: 90px;
-            background-color: red;
-            border-radius: 50%;
-        }
-
-        .coracao::before{
-            top: 0px;
-            left: -45px;
-        }
-
-        .coracao::after{
-            top: 45px;
-            left: 0px;
         }
     </style>
 </head>
 <body>
-    <div class="coracao"></div>
+    <div class="img">
+        <img src="https://imagepng.org/coracao/coracao-3/" alt="" height="400px">
+    </div>
 </body>
 </html>
