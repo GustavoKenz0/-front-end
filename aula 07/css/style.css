@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Jacquarda+Bastarda+9&family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Slackside+One&display=swap');
+
+h1{
+    font-family: 'Slackside One';
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(17, 86, 102);
+    padding: 0;
+    font-size: 1.3em;
+}
+
+.container{
+    max-width: 640px;
+    height: 350px;
+    margin: 50px auto;
+    background-color: #ffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: .3em .3em .3em .3em;
+}
+
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    color: rgb(17, 86, 102);
+    border-radius: 5px;
+}
+
+form input{
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form button{
+    border: none;
+    background-color: rgb(17, 86, 102);
+    color: white;
+    font-size: 18px;
+    height: 50px;
+}
