@@ -12,7 +12,19 @@ function carregarImagem(){
 
 }
 
+function clicarImagen() {
+    const imagemMiniatura = document.querySelectorAll("#galeria img");
 
+    imagemMiniatura.forEach(imagemMiniatura=>{
+        imagemMiniatura.addEventListener('click',function(){
+            const imagemGrande = document.createElement('img');
+            imagemGrande.src = this.src;
+            imagemGrande.classList.add('imagem-grande');
+            document.getElementById('imagem-grande-container').innerHTML='';
+            document.getElementById('imagem-grande-container').appendChild(imagemGrande);
+        })
+    })
+}
 
 
 document.getElementById('arquivos').addEventListener('change', function(event){
@@ -23,10 +35,11 @@ document.getElementById('arquivos').addEventListener('change', function(event){
         const imgURL = e.target.result;
         images.push(imgURL);
         carregarImagem();
+        clicarImagen();
 
     };
 
-    
+  
 
     ler.readAsDataURL(arquivo)
 });
