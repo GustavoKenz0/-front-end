@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Modificar o conteudo de um elemento</h1>
+    <div id="meuElemento">Conteudo Inicial</div>
+    <button onclick="modificar()">Mudar</button>
+    <hr>
+    <div id="cor">Texto colorido</div>
+    <button onclick="colorir()" >Colorir</button>
+
+    <hr>
+
+    <input type="text" id="texto" value="Valor inicial">
+    <button onclick="pegar()">Pegar texto</button>
+    <p id="conteudo"></p>
+
+    <hr>
+
+    <h1>Esconder Elemento</h1>
+    <div id="esconder">Texto para esconder</div>
+    <button onclick="esconderTexto()">Esconder</button>
+    <button onclick="aparecerElemento()">Aparecer</button>
+
+    <h1>Excluir Elemento</h1>
+    <div id="outraImg">
+    <img id="imagem" src="https://i.scdn.co/image/ab67616d0000b2736cb90cd8c9acbe0f05dcd71a" alt="">
+    </div>
+    <br>
+    <button onclick="removerImg()">Remover imagem</button>
+    <button onclick="aparecerImg()">Aparecer imagem</button>
+
+    <script src="JS/index.js"></script>
+</html>
